@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Dialog - Animation - Clickoutside</title>
+	<link rel="stylesheet" href="themes/base/jquery.ui.all.css">
+	<script src="jquery-1.9.1.js"></script>
+	<script src="ui/jquery.ui.core.js"></script>
+	<script src="ui/jquery.ui.widget.js"></script>
+	<script src="ui/jquery.ui.mouse.js"></script>
+	<script src="ui/jquery.ui.draggable.js"></script>
+	<script src="ui/jquery.ui.position.js"></script>
+	<script src="ui/jquery.ui.resizable.js"></script>
+	<script src="ui/jquery.ui.button.js"></script>
+	<script src="ui/jquery.ui.dialog.js"></script>
+	<script src="ui-clickoutside/jquery.ui.dialog-clickoutside.js"></script>
+	<link rel="stylesheet" href="demos.css">
+	<script>
+	$(function() {
+	
+		$( "#dialog1" ).dialog({
+			autoOpen: false,
+			show: {
+				effect: "fade",
+				duration: 1000
+			},
+			hide: {
+				effect: "fade",
+				duration: 1000
+			},
+			position: {
+  			my: "center",
+  			at: "center-330"
+			},
+			// Add the 2 options below to use click outside feature
+			clickOutside: true, // clicking outside the dialog will close it
+			clickOutsideTrigger: "#opener1"  // Element (id or class) that triggers the dialog opening 
+		});
+		
+    $( "#dialog2" ).dialog({
+			autoOpen: false,
+			show: {
+				effect: "fade",
+				duration: 1000
+			},
+			hide: {
+				effect: "fade",
+				duration: 1000
+			},
+			position: {
+  			my: "center",
+  			at: "center"
+			},
+			// Add the 2 options below to use click outside feature
+			clickOutside: true, // clicking outside the dialog will close it
+			clickOutsideTrigger: "#opener2"  // Element (id or class) that triggers the dialog opening
+		});		
+
+    $( "#dialog3" ).dialog({
+			autoOpen: false,
+			show: {
+				effect: "fade",
+				duration: 1000
+			},
+			hide: {
+				effect: "fade",
+				duration: 1000
+			},
+			position: {
+  			my: "center",
+  			at: "center+330"
+			},
+			clickOutside: false // For demo purpose. Not necessary because this is the default value
+		});	
+
+		$( "#opener1" ).click(function() {
+			$( "#dialog1" ).dialog( "open" );
+		});
+		
+		$( "#opener2" ).click(function() {
+			$( "#dialog2" ).dialog( "open" );
+		});
+		
+		$( "#opener3" ).click(function() {
+			$( "#dialog3" ).dialog( "open" );
+		});
+		
+	});
+	</script>
+</head>
+<body>
+
+<div id="dialog1" title="Basic dialog #1">
+	<p>Dialog #1</p>
+	<p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+
+<div id="dialog2" title="Basic dialog #2">
+	<p>Dialog #2</p>
+	<p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+
+<div id="dialog3" title="Basic dialog #3">
+	<p>Dialog #3 : default jQuery UI dialog without click outside</p>
+	<p>This is a animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+
+<button id="opener1">Open Dialog #1 (with click outside active)</button>
+<button id="opener2"><span>Open Dialog #2 (with click outside active) - inner span button</span></button>
+<button id="opener3">Open Dialog #3 <strong>(without click outside)</strong></button>
+
+
+<div class="demo-description">
+  <p>Dialogs may be animated by specifying an effect for the show and/or hide properties.  You must include the individual effects file for any effects you would like to use.</p>
+  <p><a href="#">A link that could be anything</a></p>
+  <p><button>A button that could be anything</button></p>
+</div>
+</body>
+</html>
