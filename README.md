@@ -4,10 +4,11 @@ jQuery UI Dialog : close when clicking outside
 This plugin enables to close a jQuery UI dialog when clicking outside anywhere outside the dialog or the element that opened it.
 A simple demo is available as well.
 
-# How to install
-In order to use it simply add jquery.ui.dialog-clickoutside.js to the page afer any javascript required by the jQuery UI dialog
+## How to install
+In order to use it, simply add "jquery.ui.dialog-clickoutside.js" located in the "ui-clickoutside" folder to your page after any javascript required by the jQuery UI dialog.
+
 Works with jQuery 1.9.1 and jQuery UI 1.10.3 (untested with other versions).
-# How to use
+## How to use
 Define the dialog configuration options as indicated below. And enjoy.
 ```javascript
 $( "#dialog1" ).dialog({
