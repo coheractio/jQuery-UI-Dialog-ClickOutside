@@ -6,7 +6,7 @@ A simple demo is available as well.
 
 ## Demo
 
-A demo is available here : demo.coheractio.com/jQuery-UI-Dialog-ClickOutside
+A demo is available here : http://demo.coheractio.com/jQuery-UI-Dialog-ClickOutside
 
 ## How to install
 In order to use it, simply add "jquery.ui.dialog-clickoutside.js" located in the "ui-clickoutside" folder to your page after any javascript required by the jQuery UI dialog.
