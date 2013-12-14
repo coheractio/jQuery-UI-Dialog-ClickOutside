@@ -5,7 +5,6 @@ This plugin enables to close a jQuery UI dialog when clicking outside anywhere o
 A simple demo is available as well.
 
 ## Demo
- 
 A demo is available here : http://www.coheractio.com/blog/jquery-ui-dialog-close-when-clicking-outside-demo
 
 ## How to install
